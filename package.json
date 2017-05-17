@@ -11,7 +11,8 @@
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.10.0",
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "sw-precache": "^5.1.1"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
@@ -31,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
